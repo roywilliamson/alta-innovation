@@ -1,8 +1,20 @@
 ---
 // Hero section for Innovation Nexus Consulting
+import { WavyBackground } from './WavyBackground.tsx';
 ---
 
-<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 pt-16">
+<section class="min-h-screen relative overflow-hidden pt-16">
+  <WavyBackground
+    client:load
+    containerClassName="absolute inset-0"
+    colors={["#ea580c", "#f97316", "#fb923c", "#fdba74", "#fed7aa"]}
+    waveOpacity={0.15}
+    speed="fast"
+    blur={8}
+  >
+    <div></div>
+  </WavyBackground>
+  <div class="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50/80 via-amber-50/60 to-yellow-50/40">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div class="space-y-8 animate-fade-in">
@@ -72,6 +84,7 @@
         </svg>
       </button>
     </div>
+  </div>
   </div>
 </section>
 
