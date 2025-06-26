@@ -1,0 +1,107 @@
+---
+// Expertise section for Innovation Nexus Consulting
+const expertiseAreas = [
+  {
+    title: "Green Technology Strategy",
+    description: "Navigate the renewable energy landscape, sustainable manufacturing, and circular economy opportunities. From market analysis to technology roadmaps.",
+    icon: "🌱",
+    highlights: ["CleanTech Market Entry", "Sustainability ROI", "Carbon Strategy"]
+  },
+  {
+    title: "Deep Tech Innovation",
+    description: "Quantum computing, biotechnology, advanced materials, and emerging hardware. Bridging the gap between breakthrough science and market reality.",
+    icon: "🔬",
+    highlights: ["Quantum Applications", "BioTech Commercialization", "Advanced Materials"]
+  },
+  {
+    title: "AI & Machine Learning",
+    description: "Enterprise AI strategy, ethical AI implementation, and competitive positioning in the age of artificial intelligence and automation.",
+    icon: "🤖",
+    highlights: ["Enterprise AI Strategy", "Ethical AI Framework", "ML Operations"]
+  },
+  {
+    title: "Investment Strategy",
+    description: "Due diligence, portfolio optimization, and strategic partnerships in emerging technology sectors. Connect innovation with capital.",
+    icon: "💼",
+    highlights: ["Due Diligence", "Portfolio Strategy", "Strategic Partnerships"]
+  }
+];
+---
+
+<section id="expertise" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">
+        Strategic Expertise
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Deep domain knowledge across the innovation spectrum, from emerging technologies 
+        to market strategy and investment execution.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {expertiseAreas.map((area, index) => (
+        <div class="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg rounded-xl bg-white p-8">
+          <div class="text-4xl mb-4">{area.icon}</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">{area.title}</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">{area.description}</p>
+          <div class="space-y-2">
+            {area.highlights.map((highlight) => (
+              <div class="flex items-center text-sm text-emerald-600">
+                <div class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
+                {highlight}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-20 bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-12">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 mb-6">
+            Proven Track Record
+          </h3>
+          <p class="text-lg text-gray-700 mb-8">
+            15+ years advising C-suite executives on innovation strategy, with a focus on 
+            sustainable technology adoption and competitive positioning in emerging markets.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-emerald-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-gray-700">Former Partner at McKinsey & Company</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-emerald-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+              <span class="text-gray-700">PhD in Materials Science, MIT</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-emerald-600">95%</div>
+            <div class="text-sm text-gray-600 mt-2">Client Satisfaction</div>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-emerald-600">12</div>
+            <div class="text-sm text-gray-600 mt-2">Industry Awards</div>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-emerald-600">3x</div>
+            <div class="text-sm text-gray-600 mt-2">Avg. ROI Increase</div>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-emerald-600">25+</div>
+            <div class="text-sm text-gray-600 mt-2">Speaking Engagements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

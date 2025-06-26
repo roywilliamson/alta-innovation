@@ -1,0 +1,93 @@
+---
+// Hero section for Innovation Nexus Consulting
+---
+
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white pt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8 animate-fade-in">
+        <div class="space-y-4">
+          <p class="text-emerald-600 font-medium tracking-wide uppercase text-sm">
+            Senior Innovation Consultant
+          </p>
+          <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            Transforming Vision into 
+            <span class="text-emerald-600"> Innovation</span>
+          </h1>
+          <p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+            Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. 
+            From market entry to investment strategy, I help leaders build sustainable competitive advantages.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button 
+            data-scroll-to="contact"
+            class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            Schedule Consultation
+          </button>
+          <button 
+            data-scroll-to="insights"
+            class="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-8 py-4 text-lg rounded-lg font-medium transition-colors duration-200"
+          >
+            Download Insights
+          </button>
+        </div>
+
+        <div class="flex items-center space-x-8 pt-8">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900">50+</div>
+            <div class="text-sm text-gray-600">Fortune 500 Clients</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900">$2B+</div>
+            <div class="text-sm text-gray-600">Investment Facilitated</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900">15+</div>
+            <div class="text-sm text-gray-600">Years Experience</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative animate-fade-in-delay">
+        <div class="w-full h-96 lg:h-[500px] bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl flex items-center justify-center">
+          <img 
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+            alt="Dr. Alexandra Chen" 
+            class="w-80 h-80 object-cover rounded-full border-8 border-white shadow-2xl"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-20">
+      <button 
+        data-scroll-to="expertise"
+        class="animate-bounce text-gray-600 hover:text-emerald-600 p-2 rounded-full hover:bg-gray-50 transition-colors duration-200"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Smooth scrolling for hero buttons
+  const heroButtons = document.querySelectorAll('[data-scroll-to]');
+  
+  heroButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const target = (e.target as HTMLElement).getAttribute('data-scroll-to');
+      if (target) {
+        const element = document.getElementById(target);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
