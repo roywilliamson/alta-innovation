@@ -1,0 +1,16 @@
+{
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Content",
+      "path": "[[workspace]]/src/content"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:4322",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.content.draftField": {
+    "name": "draft",
+    "type": "boolean"
+  },
+  "frontMatter.content.fmHighlight": true
+}
