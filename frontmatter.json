@@ -1,0 +1,136 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "page",
+      "pageBundle": false,
+      "previewPath": "'/'",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Layout",
+          "name": "layout",
+          "type": "string",
+          "default": "../layouts/Layout.astro"
+        }
+      ]
+    },
+    {
+      "name": "content",
+      "pageBundle": false,
+      "previewPath": null,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Section",
+          "name": "section",
+          "type": "choice",
+          "choices": ["hero", "navigation", "expertise", "clients", "insights", "contact"]
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Subtitle",
+          "name": "subtitle",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "wysiwyg": true
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "Image Alt Text",
+          "name": "imageAlt",
+          "type": "string"
+        },
+        {
+          "title": "Button Text",
+          "name": "buttonText",
+          "type": "string"
+        },
+        {
+          "title": "Button Link",
+          "name": "buttonLink",
+          "type": "string"
+        },
+        {
+          "title": "Statistics",
+          "name": "statistics",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Value",
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "title": "Label",
+              "name": "label",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Features",
+          "name": "features",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Icon",
+              "name": "icon",
+              "type": "string"
+            },
+            {
+              "title": "Title",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "title": "Description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "title": "Highlights",
+              "name": "highlights",
+              "type": "list"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Content",
+      "path": "[[workspace]]/src/content"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:4322",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.content.draftField": {
+    "name": "draft",
+    "type": "boolean"
+  }
+}

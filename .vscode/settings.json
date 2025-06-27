@@ -1,0 +1,23 @@
+{
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Content",
+      "path": "[[workspace]]/src/content"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:4322",
+  "frontMatter.dashboard.openOnStart": false,
+  "frontMatter.content.draftField": {
+    "name": "draft",
+    "type": "boolean"
+  },
+  "frontMatter.content.fmHighlight": true,
+  "git.autoRefresh": true,
+  "git.autoRepositoryDetection": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  }
+}

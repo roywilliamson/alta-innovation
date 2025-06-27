@@ -1,11 +1,14 @@
 ---
 // Navigation component for Innovation Nexus Consulting
+import { getNavigationContent } from '../lib/content.ts';
+
+const navContent = getNavigationContent();
 ---
 
 <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <div class="text-xl font-bold text-gray-900">ALTA INNOVATION</div>
+      <div class="text-xl font-bold text-gray-900">{navContent.title || "ALTA INNOVATION"}</div>
       
       <!-- Desktop Navigation -->
       <div class="hidden md:flex space-x-8">
