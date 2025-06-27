@@ -1,7 +1,9 @@
 ---
-contentTitle: 📞 Contact Information & Services
+contentTitle: 📞 Let's Discuss Your Innovation Strategy & Contact Details
+cardImage: ../frontmatter_content/lets-discuss-section.jpg
 section: contact
-lastmod: 2025-06-27T16:19:37.690Z
+order: 6
+lastmod: 2025-06-27T17:03:51.456Z
 title: Let's Discuss Your Innovation Strategy
 description: Ready to accelerate your organization's innovation journey? Schedule a strategic consultation to explore opportunities in green tech, deep tech, and AI.
 consultationTitle: Strategic Consultation

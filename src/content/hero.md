@@ -1,7 +1,9 @@
 ---
-contentTitle: 🏠 Homepage Hero Section
+contentTitle: 🏠 Homepage Hero Banner
+cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
-lastmod: 2025-06-27T16:15:07.434Z
+order: 2
+lastmod: 2025-06-27T17:02:34.930Z
 title: Transforming Vision into Innovation
 subtitle: Senior Innovation Consultant
 description: Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. From market entry to investment strategy, I help leaders build sustainable competitive advantages.

@@ -35,13 +35,27 @@
           "title": "Content Title",
           "name": "contentTitle",
           "type": "string",
-          "description": "Descriptive title for this content section (for CMS organization only)"
+          "description": "Descriptive title for this content section (for CMS organization only)",
+          "isTitle": true
+        },
+        {
+          "title": "Card Image",
+          "name": "cardImage",
+          "type": "image",
+          "description": "Image to display on the Front Matter dashboard card",
+          "isPreviewImage": true
         },
         {
           "title": "Section",
           "name": "section",
           "type": "choice",
           "choices": ["hero", "navigation", "expertise", "clients", "insights", "contact"]
+        },
+        {
+          "title": "Display Order",
+          "name": "order",
+          "type": "number",
+          "description": "Order in which this section appears on the website (1 = first)"
         },
         {
           "title": "Title",
@@ -131,7 +145,8 @@
     {
       "title": "Website Content",
       "path": "[[workspace]]/src/content",
-      "contentTypes": ["content"]
+      "contentTypes": ["content"],
+      "excludeSubdir": false
     }
   ],
   "frontMatter.preview.host": "http://localhost:4321",
@@ -140,12 +155,16 @@
     "name": "draft",
     "type": "boolean"
   },
-  "frontMatter.dashboard.content.cardFields": {
-    "title": "contentTitle",
-    "description": "description",
-    "date": "lastmod"
-  },
+  "frontMatter.dashboard.content.card.fields.title": "contentTitle",
+  "frontMatter.dashboard.content.card.fields.description": "description",
+  "frontMatter.dashboard.content.card.fields.date": "lastmod",
   "frontMatter.content.sorting": [
+    {
+      "title": "Website Order",
+      "name": "order",
+      "order": "asc",
+      "type": "number"
+    },
     {
       "title": "Last modified (desc)",
       "name": "lastmod",
@@ -159,7 +178,7 @@
   ],
   "frontMatter.dashboard.content.pagination": false,
   "frontMatter.content.autoUpdateDate": true,
-  "frontMatter.content.defaultSorting": "lastmod",
+  "frontMatter.content.defaultSorting": "order",
   "frontMatter.dashboard.content.filters": [
     {
       "title": "All content",

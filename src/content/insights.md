@@ -1,7 +1,9 @@
 ---
-contentTitle: 📊 Research Papers & Whitepapers
+contentTitle: 📊 Strategic Insights & Research Publications
+cardImage: ../frontmatter_content/insights_section.jpg
 section: insights
-lastmod: 2025-06-27T16:19:24.600Z
+order: 5
+lastmod: 2025-06-27T17:03:32.050Z
 title: Strategic Insights & Research
 description: Download comprehensive reports and strategic frameworks developed from real-world consulting experience with industry leaders.
 whitepapers:

@@ -1,7 +1,10 @@
 ---
-contentTitle: 🧭 Navigation Menu & Branding
+contentTitle: Header Name & Navigation
+image: ../frontmatter_content/navigation_section.jpg
+cardImage: ../frontmatter_content/navigation_section.jpg
 section: navigation
-lastmod: 2025-06-27T16:15:22.735Z
+order: 1
+lastmod: 2025-06-27T17:02:14.786Z
 title: Roy Williamson
 menuItems:
   - label: Expertise

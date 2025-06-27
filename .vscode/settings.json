@@ -13,6 +13,9 @@
     "type": "boolean"
   },
   "frontMatter.content.fmHighlight": true,
+  "frontMatter.dashboard.content.card.fields.title": "contentTitle",
+  "frontMatter.dashboard.content.card.fields.description": "description",
+  "frontMatter.dashboard.content.card.fields.date": true,
   "git.autoRefresh": true,
   "git.autoRepositoryDetection": true,
   "files.watcherExclude": {
