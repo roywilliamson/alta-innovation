@@ -1,14 +1,16 @@
 ---
-section: "navigation"
-title: "Roy Williamson"
+contentTitle: 🧭 Navigation Menu & Branding
+section: navigation
+lastmod: 2025-06-27T16:15:22.735Z
+title: Roy Williamson
 menuItems:
-  - label: "Expertise"
+  - label: Expertise
     link: "#expertise"
-  - label: "Clients"
+  - label: Clients
     link: "#clients"
-  - label: "Insights"
+  - label: Insights
     link: "#insights"
-  - label: "Contact"
+  - label: Contact
     link: "#contact"
 ---
 

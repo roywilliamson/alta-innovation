@@ -32,6 +32,12 @@
       "filePrefix": null,
       "fields": [
         {
+          "title": "Content Title",
+          "name": "contentTitle",
+          "type": "string",
+          "description": "Descriptive title for this content section (for CMS organization only)"
+        },
+        {
           "title": "Section",
           "name": "section",
           "type": "choice",
@@ -123,14 +129,65 @@
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
     {
-      "title": "Content",
-      "path": "[[workspace]]/src/content"
+      "title": "Website Content",
+      "path": "[[workspace]]/src/content",
+      "contentTypes": ["content"]
     }
   ],
-  "frontMatter.preview.host": "http://localhost:4322",
-  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.dashboard.openOnStart": false,
   "frontMatter.content.draftField": {
     "name": "draft",
     "type": "boolean"
-  }
+  },
+  "frontMatter.dashboard.content.cardFields": {
+    "title": "contentTitle",
+    "description": "description",
+    "date": "lastmod"
+  },
+  "frontMatter.content.sorting": [
+    {
+      "title": "Last modified (desc)",
+      "name": "lastmod",
+      "order": "desc"
+    },
+    {
+      "title": "Content Title (asc)",
+      "name": "contentTitle",
+      "order": "asc"
+    }
+  ],
+  "frontMatter.dashboard.content.pagination": false,
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.content.defaultSorting": "lastmod",
+  "frontMatter.dashboard.content.filters": [
+    {
+      "title": "All content",
+      "value": ""
+    },
+    {
+      "title": "Hero Section",
+      "value": "section:hero"
+    },
+    {
+      "title": "Navigation",
+      "value": "section:navigation"
+    },
+    {
+      "title": "Services",
+      "value": "section:expertise"
+    },
+    {
+      "title": "Clients",
+      "value": "section:clients"
+    },
+    {
+      "title": "Research",
+      "value": "section:insights"
+    },
+    {
+      "title": "Contact",
+      "value": "section:contact"
+    }
+  ]
 }

@@ -1,21 +1,23 @@
 ---
-section: "hero"
-title: "Transforming Vision into Innovation"
-subtitle: "Senior Innovation Consultant"
-description: "Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. From market entry to investment strategy, I help leaders build sustainable competitive advantages."
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
-imageAlt: "Dr. Alexandra Chen"
-primaryButtonText: "Schedule Consultation"
+contentTitle: 🏠 Homepage Hero Section
+section: hero
+lastmod: 2025-06-27T16:15:07.434Z
+title: Transforming Vision into Innovation
+subtitle: Senior Innovation Consultant
+description: Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. From market entry to investment strategy, I help leaders build sustainable competitive advantages.
+image: https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80
+imageAlt: Dr. Alexandra Chen
+primaryButtonText: Schedule Consultation
 primaryButtonLink: "#contact"
-secondaryButtonText: "Download Insights"
+secondaryButtonText: Download Insights
 secondaryButtonLink: "#insights"
 statistics:
-  - value: "50+"
-    label: "Fortune 500 Clients"
-  - value: "$2B+"
-    label: "Investment Facilitated"
-  - value: "15+"
-    label: "Years Experience"
+  - value: 50+
+    label: Fortune 500 Clients
+  - value: $2B+
+    label: Investment Facilitated
+  - value: 15+
+    label: Years Experience
 ---
 
 # Hero Section Content

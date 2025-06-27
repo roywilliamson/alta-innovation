@@ -42,7 +42,7 @@ Before starting, ensure you have:
 ### 1.3 Start the Development Server
 1. **Type** the following command in the terminal:
    ```bash
-   export PATH="/opt/homebrew/opt/node/bin:$PATH" && npm run dev
+   npm run dev
    ```
 2. **Press Enter**
 3. **Wait** for the server to start (you'll see a message like "Local: http://localhost:4321/")
