@@ -4,7 +4,7 @@ image: ../frontmatter_content/navigation_section.jpg
 cardImage: ../frontmatter_content/navigation_section.jpg
 section: navigation
 order: 1
-lastmod: 2025-06-27T17:02:14.786Z
+date: 2025-06-07T17:05:07.414Z
 title: Roy Williamson
 menuItems:
   - label: Expertise
@@ -15,6 +15,7 @@ menuItems:
     link: "#insights"
   - label: Contact
     link: "#contact"
+lastmod: 2025-06-27T17:08:05.552Z
 ---
 
 # Navigation Content

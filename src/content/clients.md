@@ -3,7 +3,8 @@ contentTitle: 👥 Trusted by Industry Leaders & Testimonials
 cardImage: ../frontmatter_content/expertise_section.jpg
 section: clients
 order: 4
-lastmod: 2025-06-27T17:03:13.614Z
+date: 2025-06-27T17:07:00.836Z
+lastmod: 2025-06-27T17:13:09.636Z
 title: Trusted by Industry Leaders
 description: Working with Fortune 500 companies, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
 clientLogos:

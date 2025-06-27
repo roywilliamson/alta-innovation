@@ -35,8 +35,7 @@
           "title": "Content Title",
           "name": "contentTitle",
           "type": "string",
-          "description": "Descriptive title for this content section (for CMS organization only)",
-          "isTitle": true
+          "description": "Descriptive title for this content section (for CMS organization only)"
         },
         {
           "title": "Card Image",
@@ -58,6 +57,12 @@
           "description": "Order in which this section appears on the website (1 = first)"
         },
         {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime",
+          "description": "Date for card display (automatically synced with lastmod)"
+        },
+        {
           "title": "Title",
           "name": "title",
           "type": "string"
@@ -70,8 +75,7 @@
         {
           "title": "Description",
           "name": "description",
-          "type": "string",
-          "wysiwyg": true
+          "type": "string"
         },
         {
           "title": "Image",
@@ -157,7 +161,8 @@
   },
   "frontMatter.dashboard.content.card.fields.title": "contentTitle",
   "frontMatter.dashboard.content.card.fields.description": "description",
-  "frontMatter.dashboard.content.card.fields.date": "lastmod",
+  "frontMatter.dashboard.content.card.fields.date": true,
+  "frontMatter.dashboard.content.dateField": "lastmod",
   "frontMatter.content.sorting": [
     {
       "title": "Website Order",

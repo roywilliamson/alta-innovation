@@ -3,7 +3,8 @@ contentTitle: 💼 Strategic Expertise & Service Offerings
 cardImage: ../frontmatter_content/strategic_section.jpg
 section: expertise
 order: 3
-lastmod: 2025-06-27T17:02:53.719Z
+date: 2025-06-27T17:06:56.281Z
+lastmod: 2025-06-27T17:12:49.357Z
 title: Strategic Expertise
 description: Deep domain knowledge across the innovation spectrum, from emerging technologies to market strategy and investment execution.
 features:
