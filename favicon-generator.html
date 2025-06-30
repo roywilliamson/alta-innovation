@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alta Innovation Favicon Generator</title>
+</head>
+<body>
+    <h1>Alta Innovation Favicon Generator</h1>
+    <p>Right-click on each canvas and "Save image as..." to download the favicon files:</p>
+    
+    <h3>16x16 favicon (save as favicon-16x16.png)</h3>
+    <canvas id="favicon16" width="16" height="16"></canvas>
+    
+    <h3>32x32 favicon (save as favicon-32x32.png)</h3>
+    <canvas id="favicon32" width="32" height="32"></canvas>
+    
+    <h3>180x180 Apple Touch Icon (save as apple-touch-icon.png)</h3>
+    <canvas id="apple180" width="180" height="180"></canvas>
+
+    <script>
+        function drawFavicon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            const center = size / 2;
+            const radius = size / 2 - 1;
+            
+            // Create gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#2563eb');
+            gradient.addColorStop(1, '#1d4ed8');
+            
+            // Draw background circle
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(center, center, radius, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Draw border
+            ctx.strokeStyle = '#1e40af';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            
+            // Draw letter A
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.6}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('A', center, center);
+        }
+        
+        // Generate all favicon sizes
+        drawFavicon(document.getElementById('favicon16'), 16);
+        drawFavicon(document.getElementById('favicon32'), 32);
+        drawFavicon(document.getElementById('favicon180'), 180);
+    </script>
+</body>
+</html>
