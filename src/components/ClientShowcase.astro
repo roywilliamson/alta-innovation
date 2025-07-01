@@ -18,19 +18,48 @@ const clientLogos = clientsContent.clientLogos || [];
       </p>
     </div>
 
-    <!-- Client Logos -->
+    <!-- Client Logos Carousel -->
     <div class="mb-20">
       <p class="text-center text-gray-500 mb-8 uppercase tracking-wide text-sm">
         Trusted by Leading Organizations
       </p>
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
-        {clientLogos.map((client) => (
-          <div class="flex justify-center">
-            <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center text-gray-600 font-bold text-lg border border-gray-100 hover:shadow-lg transition-shadow">
-              {client.logo}
+      <div class="relative overflow-hidden bg-white rounded-2xl shadow-sm border border-gray-100 py-8">
+        <div class="logo-carousel flex items-center space-x-12">
+          <!-- First set of logos -->
+          {clientLogos.map((client) => (
+            <div class="flex-shrink-0 flex items-center justify-center bg-white rounded-lg p-4 hover:shadow-md transition-shadow">
+              {client.logo.endsWith('.png') || client.logo.endsWith('.jpg') || client.logo.endsWith('.svg') ? (
+                <img
+                  src={client.logo}
+                  alt={`${client.name} logo`}
+                  class="h-16 w-auto object-contain transition-all duration-300 hover:scale-105"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="h-16 w-20 bg-gray-100 rounded flex items-center justify-center">
+                  <span class="text-gray-600 font-bold text-sm">{client.logo}</span>
+                </div>
+              )}
             </div>
-          </div>
-        ))}
+          ))}
+          <!-- Duplicate set for seamless loop -->
+          {clientLogos.map((client) => (
+            <div class="flex-shrink-0 flex items-center justify-center bg-white rounded-lg p-4 hover:shadow-md transition-shadow">
+              {client.logo.endsWith('.png') || client.logo.endsWith('.jpg') || client.logo.endsWith('.svg') ? (
+                <img
+                  src={client.logo}
+                  alt={`${client.name} logo`}
+                  class="h-16 w-auto object-contain transition-all duration-300 hover:scale-105"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="h-16 w-20 bg-gray-100 rounded flex items-center justify-center">
+                  <span class="text-gray-600 font-bold text-sm">{client.logo}</span>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
@@ -93,3 +122,29 @@ const clientLogos = clientsContent.clientLogos || [];
     </div>
   </div>
 </section>
+
+<style>
+  .logo-carousel {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .logo-carousel:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Ensure smooth scrolling on all devices */
+  @media (prefers-reduced-motion: reduce) {
+    .logo-carousel {
+      animation: none;
+    }
+  }
+</style>

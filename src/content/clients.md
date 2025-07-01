@@ -4,26 +4,28 @@ cardImage: ../frontmatter_content/expertise_section.jpg
 section: clients
 order: 4
 date: 2025-06-27T17:07:00.836Z
-lastmod: 2025-06-27T17:13:09.636Z
+lastmod: 2025-07-01T11:46:29.258Z
 title: Trusted by Industry Leaders
 description: Working with Fortune 500 companies, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
 clientLogos:
-  - name: TechCorp
-    logo: TC
-  - name: GreenEnergy
-    logo: GE
-  - name: Innovation Labs
-    logo: IL
-  - name: Future Systems
-    logo: FS
-  - name: CleanTech Ventures
-    logo: CV
-  - name: Quantum Dynamics
-    logo: QD
-  - name: BioTech Solutions
-    logo: BS
-  - name: AI Innovations
-    logo: AI
+  - name: Alstom
+    logo: /src/assets/images/alstom-logo.png
+  - name: APC
+    logo: /src/assets/images/apc-logo.png
+  - name: CLT
+    logo: /src/assets/images/clt-logo.png
+  - name: Hawtal Whiting
+    logo: /src/assets/images/hawtal-whiting-logo.png
+  - name: Institute of Physics
+    logo: /src/assets/images/iop-logo.png
+  - name: LowCVP
+    logo: /src/assets/images/lowcvp-logo.png
+  - name: PA Consulting
+    logo: /src/assets/images/pa-consulting-logo.png
+  - name: SEEDA
+    logo: /src/assets/images/seeda-logo.png
+  - name: TTP
+    logo: /src/assets/images/ttp-logo.png
 testimonials:
   - quote: ALTA's strategic guidance was instrumental in our $200M clean energy pivot. His deep understanding of both technology and market dynamics is unparalleled.
     author: Sarah Johnson
