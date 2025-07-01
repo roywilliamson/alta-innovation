@@ -4,12 +4,12 @@ cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
 order: 2
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-06-27T17:12:30.395Z
+lastmod: 2025-07-01T12:11:31.067Z
 title: Transforming Vision into Innovation
-subtitle: Senior Innovation Consultant
+subtitle: Roy Williamson - Senior Innovation Consultant
 description: Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. From market entry to investment strategy, I help leaders build sustainable competitive advantages.
 image: https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80
-imageAlt: Dr. Alexandra Chen
+imageAlt: Roy Williamson
 primaryButtonText: Schedule Consultation
 primaryButtonLink: "#contact"
 secondaryButtonText: Download Insights

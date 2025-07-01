@@ -5,7 +5,7 @@ cardImage: ../frontmatter_content/navigation_section.jpg
 section: navigation
 order: 1
 date: 2025-06-07T17:05:07.414Z
-title: Roy Williamson
+title: Alta Innovation
 menuItems:
   - label: Expertise
     link: "#expertise"
@@ -15,7 +15,7 @@ menuItems:
     link: "#insights"
   - label: Contact
     link: "#contact"
-lastmod: 2025-06-27T17:08:05.552Z
+lastmod: 2025-07-01T12:11:20.112Z
 ---
 
 # Navigation Content
