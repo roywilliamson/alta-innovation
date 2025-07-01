@@ -4,31 +4,31 @@ cardImage: ../frontmatter_content/lets-discuss-section.jpg
 section: contact
 order: 6
 date: 2025-06-27T17:03:51.456Z
-lastmod: 2025-06-27T17:13:52.106Z
+lastmod: 2025-07-01T12:20:10.640Z
 title: Let's Discuss Your Innovation Strategy
-description: Ready to accelerate your organization's innovation journey? Schedule a strategic consultation to explore opportunities in green tech, deep tech, and AI.
+description: Ready to navigate the complexities of deeptech markets? Schedule a strategic consultation to explore investment opportunities, business development strategies, and solutions to systemic challenges.
 consultationTitle: Strategic Consultation
 consultationServices:
-  - Innovation strategy assessment
-  - Market opportunity analysis
-  - Investment strategy framework
-  - Technology roadmap development
+  - Deeptech investment strategy
+  - Business development planning
+  - Market entry strategy
+  - Systemic challenge resolution
 consultationButtonText: Schedule Consultation
-consultationNote: Initial consultation complimentary for qualified executives
-email: alexandra.chen@innovationconsulting.com
-linkedinUrl: https://linkedin.com/in/alexandrachen
+consultationNote: Initial consultation available for qualified startups and investors
+email: roy@altainnovation.com
+linkedinUrl: https://linkedin.com/in/roy-williamson
 engagementTitle: Engagement Areas
 engagementAreas:
-  - title: Executive Advisory
-    description: Strategic guidance for C-suite executives on innovation portfolio management and technology investment decision-making.
-  - title: Investment Due Diligence
-    description: Technical and market assessment for venture capital, private equity, and corporate venture arms evaluating technology investments.
-  - title: Market Entry Strategy
-    description: Go-to-market strategy development for companies entering emerging technology sectors or geographic markets.
-  - title: Board Advisory
-    description: Independent board positions and advisory roles for technology companies and investment funds focused on innovation.
-speakingTitle: Speaking & Thought Leadership
-speakingDescription: Available for keynote presentations, panel discussions, and executive workshops on innovation strategy and emerging technology trends.
+  - title: Startup Advisory
+    description: Strategic guidance for deeptech startups on investment strategy, business development, and overcoming systemic market challenges.
+  - title: Investment Strategy
+    description: Advisory services for investors evaluating deeptech opportunities, including market analysis and commercialization assessment.
+  - title: Business Development
+    description: Partnership development, market entry strategies, and scaling support for emerging technology companies.
+  - title: Systemic Challenge Resolution
+    description: Specialized consulting for complex, multi-faceted challenges that innovative companies face in established markets.
+speakingTitle: Industry Engagement
+speakingDescription: Available for industry events, investor meetings, and strategic workshops focused on deeptech innovation and investment.
 speakingButtonText: Speaking Inquiries
 ---
 

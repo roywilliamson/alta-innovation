@@ -4,10 +4,10 @@ cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
 order: 2
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-07-01T12:11:31.067Z
+lastmod: 2025-07-01T12:17:28.472Z
 title: Transforming Vision into Innovation
 subtitle: Roy Williamson - Senior Innovation Consultant
-description: Strategic advisory for CEOs navigating the convergence of green technology, deep tech, and artificial intelligence. From market entry to investment strategy, I help leaders build sustainable competitive advantages.
+description: Building on extensive experience in the deeptech sector covering investment and business development, Roy advises on systemic challenges faced by startups and scale-ups in emerging technology markets.
 image: https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80
 imageAlt: Roy Williamson
 primaryButtonText: Schedule Consultation
