@@ -9,23 +9,23 @@ title: Trusted by Industry Leaders
 description: Working with Fortune 500 companies, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
 clientLogos:
   - name: Alstom
-    logo: /src/assets/images/alstom-logo.png
+    logo: /images/clients/alstom-logo.png
   - name: APC
-    logo: /src/assets/images/apc-logo.png
+    logo: /images/clients/apc-logo.png
   - name: CLT
-    logo: /src/assets/images/clt-logo.png
+    logo: /images/clients/clt-logo.png
   - name: Hawtal Whiting
-    logo: /src/assets/images/hawtal-whiting-logo.png
+    logo: /images/clients/hawtal-whiting-logo.png
   - name: Institute of Physics
-    logo: /src/assets/images/iop-logo.png
+    logo: /images/clients/iop-logo.png
   - name: LowCVP
-    logo: /src/assets/images/lowcvp-logo.png
+    logo: /images/clients/lowcvp-logo.png
   - name: PA Consulting
-    logo: /src/assets/images/pa-consulting-logo.png
+    logo: /images/clients/pa-consulting-logo.png
   - name: SEEDA
-    logo: /src/assets/images/seeda-logo.png
+    logo: /images/clients/seeda-logo.png
   - name: TTP
-    logo: /src/assets/images/ttp-logo.png
+    logo: /images/clients/ttp-logo.png
 testimonials:
   - quote: ALTA's strategic guidance was instrumental in our $200M clean energy pivot. His deep understanding of both technology and market dynamics is unparalleled.
     author: Sarah Johnson
