@@ -1,10 +1,10 @@
 ---
-contentTitle: 🏠 Homepage Hero Banner test
+contentTitle: 🏠 Homepage Hero Banner
 cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
 order: 2
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-07-24T09:54:25.422Z
+lastmod: 2025-07-24T10:36:35.592Z
 title: Transforming Vision into Innovation
 subtitle: Roy Williamson - Senior Innovation Consultant
 description: Building on extensive experience in the deeptech sector covering investment and business development, Roy advises on systemic challenges faced by startups and scale-ups in emerging technology markets.
