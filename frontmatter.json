@@ -48,7 +48,14 @@
           "title": "Section",
           "name": "section",
           "type": "choice",
-          "choices": ["hero", "navigation", "expertise", "clients", "insights", "contact"]
+          "choices": [
+            "hero",
+            "navigation",
+            "expertise",
+            "clients",
+            "insights",
+            "contact"
+          ]
         },
         {
           "title": "Display Order",
@@ -147,13 +154,11 @@
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
     {
-      "title": "Website Content",
-      "path": "[[workspace]]/src/content",
-      "contentTypes": ["content"],
-      "excludeSubdir": false
+      "title": "Content",
+      "path": "[[workspace]]/src/content"
     }
   ],
-  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.preview.host": "http://localhost:4322",
   "frontMatter.dashboard.openOnStart": false,
   "frontMatter.content.draftField": {
     "name": "draft",
@@ -213,5 +218,6 @@
       "title": "Contact",
       "value": "section:contact"
     }
-  ]
+  ],
+  "frontMatter.content.fmHighlight": true
 }

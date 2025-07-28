@@ -4,7 +4,7 @@ cardImage: ../frontmatter_content/insights_section.jpg
 section: insights
 order: 5
 date: 2025-06-27T17:03:32.050Z
-lastmod: 2025-07-01T12:19:24.901Z
+lastmod: 2025-07-28T14:44:39.215Z
 title: Strategic Insights & Research
 description: Insights and analysis from extensive experience in deeptech investment and business development, helping startups navigate complex market challenges.
 whitepapers:
