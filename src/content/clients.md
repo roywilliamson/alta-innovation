@@ -4,7 +4,7 @@ cardImage: ../frontmatter_content/expertise_section.jpg
 section: clients
 order: 4
 date: 2025-06-27T17:07:00.836Z
-lastmod: 2025-07-01T12:21:18.577Z
+lastmod: 2025-09-15T15:19:09.414Z
 title: Trusted by Industry Leaders
 description: Working with Fortune 500 companies, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
 clientLogos:
