@@ -4,10 +4,10 @@ cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
 order: 2
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-07-31T19:01:21.140Z
-title: Transforming Vision into Innovation
-subtitle: Roy Williamson - Senior Innovation Consultant
-description: Building on extensive experience in the deeptech sector covering investment and business development, Roy advises on systemic challenges faced by startups and scale-ups in emerging technology markets.
+lastmod: 2025-09-15T12:48:10.886Z
+title: Unlocking opportunities for startups, investors, government
+subtitle: Alta Innovation - Your solutions partner
+description: Building on extensive experience across many deep technology sectors, covering evaluation, business development and mentoring, Alta brings insight and expertise to the challenges faced by startups, scale-ups and policy officals in emerging technology markets.
 image: /images/alta-innovation-logo.png
 imageAlt: ALTA Innovation Logo
 primaryButtonText: Schedule Consultation
@@ -21,6 +21,7 @@ statistics:
     label: With deeptech startups, building clear value propositions and helping diagnose and plan for their challenges
   - value: 100's
     label: Of relationships with startups, investors and the scaleup ecosystem
+slug: transforming-vision-innovation
 ---
 
 # Hero Section Content
