@@ -21,8 +21,8 @@ export function getContent(filename: string): ContentData {
 export function isContentPublished(filename: string): boolean {
   try {
     const content = getContent(filename);
-    // Default to true if published field is not set (for backward compatibility)
-    return content.published !== false;
+    // Content is published if draft is false or not set (FrontMatter standard)
+    return content.draft !== true;
   } catch (error) {
     console.warn(`Could not check published status for: ${filename}.md`);
     return false;

@@ -64,13 +64,6 @@
           "description": "Order in which this section appears on the website (1 = first)"
         },
         {
-          "title": "Published",
-          "name": "published",
-          "type": "boolean",
-          "default": true,
-          "description": "Toggle to show/hide this section on the live website. Uncheck to hide section while editing."
-        },
-        {
           "title": "Date",
           "name": "date",
           "type": "datetime",
@@ -203,11 +196,11 @@
     },
     {
       "title": "📢 Published sections",
-      "value": "published:true"
+      "value": "draft:false"
     },
     {
-      "title": "🚧 Unpublished sections",
-      "value": "published:false"
+      "title": "🚧 Draft sections",
+      "value": "draft:true"
     },
     {
       "title": "Hero Section",

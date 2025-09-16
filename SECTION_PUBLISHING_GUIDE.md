@@ -1,8 +1,8 @@
-# 📝 Section Publishing Control Guide
+# 📝 Section Draft Control Guide
 
 ## Overview
 
-You can now control which sections of your website are published (visible to visitors) using a simple checkbox in Front Matter CMS. This allows you to:
+You can now control which sections of your website are published (visible to visitors) using the standard FrontMatter CMS draft functionality. This allows you to:
 
 - ✅ **Hide sections while editing** - Work on content without it appearing on the live site
 - ✅ **Stage content for review** - Prepare sections before making them public
@@ -19,9 +19,9 @@ You can now control which sections of your website are published (visible to vis
 
 ### 2. Edit Section Visibility
 1. **Select any content section** (hero.md, expertise.md, clients.md, etc.)
-2. **Look for the "Published" checkbox** in the form
-3. **Check the box** ✅ to show the section on your website
-4. **Uncheck the box** ❌ to hide the section from your website
+2. **Look for the "Draft" checkbox** in the form
+3. **Uncheck the box** ✅ to show the section on your website (not a draft)
+4. **Check the box** ❌ to hide the section from your website (mark as draft)
 5. **Save your changes**
 
 ### 3. Preview Changes
@@ -39,19 +39,19 @@ You can now control which sections of your website are published (visible to vis
 
 | Section | File | Current Status | Description |
 |---------|------|----------------|-------------|
-| Navigation | `navigation.md` | ✅ Published | Site header and menu |
-| Hero | `hero.md` | ✅ Published | Main banner section |
-| Expertise | `expertise.md` | ✅ Published | Services and skills |
-| Clients | `clients.md` | ✅ Published | Testimonials and background |
-| Insights | `insights.md` | ❌ Hidden | Research papers (currently being edited) |
-| Contact | `contact.md` | ✅ Published | Contact information |
+| Navigation | `navigation.md` | ✅ Published (`draft: false`) | Site header and menu |
+| Hero | `hero.md` | ✅ Published (`draft: false`) | Main banner section |
+| Expertise | `expertise.md` | ✅ Published (`draft: false`) | Services and skills |
+| Clients | `clients.md` | ✅ Published (`draft: false`) | Testimonials and background |
+| Insights | `insights.md` | ❌ Draft (`draft: true`) | Research papers (currently being edited) |
+| Contact | `contact.md` | ✅ Published (`draft: false`) | Contact information |
 
 ## Use Cases
 
 ### 🚧 **Working on New Content**
-- Set `published: false` while writing/editing
+- Set `draft: true` while writing/editing
 - Content won't appear on live site until you're ready
-- Switch to `published: true` when content is approved
+- Switch to `draft: false` when content is approved
 
 ### 🔄 **Seasonal Content**
 - Hide/show sections based on current campaigns
@@ -64,26 +64,26 @@ You can now control which sections of your website are published (visible to vis
 - Easy to switch between versions
 
 ### 📝 **Content Review Process**
-- Content creators set `published: false`
+- Content creators set `draft: true`
 - Reviewers can preview on development server
-- Set `published: true` only after approval
+- Set `draft: false` only after approval
 
 ## Technical Details
 
-- **Default behavior**: All sections are published by default (`published: true`)
-- **Backward compatibility**: Existing content without the field will still show
-- **Development vs. Production**: Hidden sections won't appear in either environment
-- **Performance**: Hidden sections are not rendered, improving page load times
+- **Default behavior**: All sections are published by default (`draft: false` or field not set)
+- **FrontMatter standard**: Uses the built-in draft functionality
+- **Development vs. Production**: Draft sections won't appear in either environment
+- **Performance**: Draft sections are not rendered, improving page load times
 
 ## Troubleshooting
 
-### Section Still Showing After Unchecking
-1. **Check the file** - Ensure `published: false` is saved in the .md file
+### Section Still Showing After Marking as Draft
+1. **Check the file** - Ensure `draft: true` is saved in the .md file
 2. **Restart dev server** - Stop (`Ctrl+C`) and restart (`npm run dev`)
 3. **Clear browser cache** - Hard refresh (`Ctrl+Shift+R`)
 
-### Section Not Showing After Checking
-1. **Verify checkbox is checked** - Should show `published: true` in file
+### Section Not Showing After Publishing (Removing Draft Status)
+1. **Verify checkbox is unchecked** - Should show `draft: false` in file
 2. **Check for errors** - Look at terminal for any error messages
 3. **Restart development server** - Sometimes needed for changes to take effect
 
