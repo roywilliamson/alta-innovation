@@ -4,9 +4,9 @@ cardImage: ../frontmatter_content/expertise_section.jpg
 section: clients
 order: 4
 date: 2025-06-27T17:07:00.836Z
-lastmod: 2025-09-15T15:19:09.414Z
-title: Trusted by Industry Leaders
-description: Working with Fortune 500 companies, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
+lastmod: 2025-09-16T09:38:07.746Z
+title: Trusted by the best
+description: Working with major corporates, innovative startups, and leading investment firms to drive transformational growth in emerging technology sectors.
 clientLogos:
   - name: Alstom
     logo: /images/clients/alstom-logo.png
@@ -26,34 +26,17 @@ clientLogos:
     logo: /images/clients/seeda-logo.png
   - name: TTP
     logo: /images/clients/ttp-logo.png
-testimonials:
-  - quote: Roy's expertise in deeptech investment strategy was crucial in helping us navigate complex market challenges and secure our Series B funding.
-    author: Dr. Sarah Mitchell
-    title: CEO & Founder
-    company: Quantum Dynamics Ltd
-  - quote: ALTA Innovation's business development guidance helped us overcome systemic barriers and establish key partnerships in the European market.
-    author: James Thompson
-    title: Chief Business Officer
-    company: Advanced Materials Startup
-  - quote: Roy's deep understanding of technology commercialization challenges provided invaluable insights for our investment decisions in the deeptech sector.
-    author: Dr. Rachel Chen
-    title: Investment Director
-    company: Technology Venture Capital
 backgroundTitle: Professional Background
 experience:
-  - role: Founder & Principal, ALTA Innovation
-    period: 2020-Present • Deeptech Investment & Business Development
-  - role: Investment Director, Technology Ventures
-    period: 2015-2020 • Deeptech Sector Focus
-  - role: Business Development Manager, Advanced Technology
-    period: 2010-2015 • Emerging Technology Markets
+  - role: Consultant in Innovation and Value. Founder at ALTA Innovation
+    period: Strategic Advice, Business Development and Investment Support
+  - role: International BD for deeptech development services , TTP
+    period: Strategy, identification, engagment, ongoing relationship development and expansion
+  - role: Head of Dealflow, DBT Venture Capital
+    period: Forging relationships across the UK to source the best deeptech deals for venture capital and straetgic CVC investors
 education:
-  - degree: MBA Business Strategy
-    institution: Leading Business School
-  - degree: MSc Engineering
-    institution: University of Technology
-  - degree: Deeptech Investment Certification
-    institution: Professional Development Institute
+  - degree: B.Eng Aeronautical Engineering, supersonics and jet engine design
+    institution: Loughborough University
 ---
 
 # Client Showcase Section
