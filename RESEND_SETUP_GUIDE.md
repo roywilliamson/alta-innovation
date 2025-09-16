@@ -5,18 +5,23 @@ This guide will help you complete the setup of the Resend-powered contact form f
 ## 🚀 What's Been Implemented
 
 ### ✅ **Components Created:**
-- **Contact Form** (`src/components/ContactForm.astro`) - Professional contact form with validation
+- **Contact Modal** (`src/components/ContactModal.astro`) - Professional modal contact form
+- **Contact Form** (`src/components/ContactForm.astro`) - Inline contact form with validation
 - **API Route** (`src/pages/api/contact.ts`) - Server-side email handling with Resend
-- **Updated Contact Section** - Now includes the contact form alongside existing content
+- **Updated Contact Section** - Modal integration and improved user experience
+- **Updated Hero Section** - Schedule Consultation button triggers modal
 
 ### ✅ **Features Included:**
+- **Modal Contact Form** - Professional overlay interface instead of mailto links
 - **Form Validation** - Client-side and server-side validation
 - **Professional Email Templates** - Branded HTML emails with all form data
 - **Loading States** - Visual feedback during form submission
-- **Success/Error Messages** - Clear user feedback
-- **Responsive Design** - Works on all devices
+- **Success/Error Messages** - Clear user feedback within modal
+- **Responsive Design** - Works on all devices and screen sizes
 - **Consultation Type Selection** - Dropdown for different service types
 - **Privacy Consent** - Required checkbox for GDPR compliance
+- **Keyboard Navigation** - Escape key to close, focus management
+- **Accessibility Features** - Proper ARIA labels and focus handling
 
 ## 🔧 **Setup Steps Required**
 
@@ -55,6 +60,30 @@ For production use, you should verify a domain:
 3. Fill out and submit the form
 4. Check your email (roy@alta-innovation.com) for the message
 5. Verify the form shows success/error messages correctly
+
+## 🎯 **Modal Interface**
+
+### **Trigger Buttons:**
+The modal contact form is triggered by:
+- **"Send Email" button** in the Contact section
+- **"Schedule Consultation" button** in the Hero section
+
+### **Modal Features:**
+- **Full-screen overlay** with backdrop blur effect
+- **Responsive design** that works on all screen sizes
+- **Smooth animations** for opening and closing
+- **Keyboard navigation** - Press Escape to close
+- **Click outside to close** - Click backdrop to dismiss
+- **Focus management** - Auto-focus on first field when opened
+- **Body scroll prevention** - Prevents background scrolling
+- **Auto-close on success** - Closes automatically after successful submission
+
+### **User Experience:**
+- **Professional appearance** - No more relying on user's email client
+- **Consistent branding** - Matches site design and colors
+- **Form validation** - Immediate feedback on errors
+- **Loading states** - Visual feedback during submission
+- **Success messaging** - Clear confirmation of message sent
 
 ## 📋 **Form Fields**
 
