@@ -18,6 +18,17 @@ export function getContent(filename: string): ContentData {
   }
 }
 
+export function isContentPublished(filename: string): boolean {
+  try {
+    const content = getContent(filename);
+    // Content is published if draft is false or not set (FrontMatter standard)
+    return content.draft !== true;
+  } catch (error) {
+    console.warn(`Could not check published status for: ${filename}.md`);
+    return false;
+  }
+}
+
 export function getHeroContent() {
   return getContent('hero');
 }
@@ -40,4 +51,8 @@ export function getInsightsContent() {
 
 export function getContactContent() {
   return getContent('contact');
+}
+
+export function getServicesContent() {
+  return getContent('services');
 }
