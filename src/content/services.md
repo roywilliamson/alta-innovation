@@ -1,11 +1,11 @@
 ---
 contentTitle: 🎯 Consulting Services & Specializations
-cardImage: ../frontmatter_content/services_section.jpg
+cardImage: /images/services_section.jpg
 section: services
 order: 3.5
 draft: false
 date: 2025-09-16T14:00:00.000Z
-lastmod: 2025-09-16T14:05:55.082Z
+lastmod: 2025-09-16T14:11:52.436Z
 title: Consulting Services
 subtitle: Specialized expertise across the innovation ecosystem
 description: Bridging the gap between technology, investment, and policy to accelerate innovation and commercialization in emerging technology sectors.

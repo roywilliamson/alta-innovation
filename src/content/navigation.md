@@ -1,7 +1,7 @@
 ---
 contentTitle: Header Name & Navigation
-image: ../frontmatter_content/navigation_section.jpg
-cardImage: ../frontmatter_content/navigation_section.jpg
+image: /images/navigation_section.jpg
+cardImage: /images/navigation_section.jpg
 section: navigation
 order: 1
 draft: false
@@ -18,7 +18,7 @@ menuItems:
     link: "#insights"
   - label: Contact
     link: "#contact"
-lastmod: 2025-09-16T13:58:35.992Z
+lastmod: 2025-09-16T14:13:08.554Z
 ---
 
 # Navigation Content
