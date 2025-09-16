@@ -1,0 +1,299 @@
+---
+// Modal Contact Form Component
+---
+
+<!-- Modal Backdrop -->
+<div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+  <!-- Modal Content -->
+  <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between p-6 border-b border-gray-200">
+      <h2 class="text-2xl font-bold text-gray-900">Get In Touch</h2>
+      <button 
+        id="close-modal" 
+        class="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-full"
+        aria-label="Close modal"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="p-6">
+      <p class="text-gray-600 mb-6">
+        Ready to discuss your innovation strategy? Send us a message and we'll get back to you within 24 hours.
+      </p>
+
+      <form id="modal-contact-form" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="modal-name" class="block text-sm font-medium text-gray-700 mb-2">
+              Full Name *
+            </label>
+            <input
+              type="text"
+              id="modal-name"
+              name="name"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+              placeholder="Your full name"
+            />
+          </div>
+          
+          <div>
+            <label for="modal-email" class="block text-sm font-medium text-gray-700 mb-2">
+              Email Address *
+            </label>
+            <input
+              type="email"
+              id="modal-email"
+              name="email"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+              placeholder="your.email@company.com"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="modal-company" class="block text-sm font-medium text-gray-700 mb-2">
+              Company/Organization
+            </label>
+            <input
+              type="text"
+              id="modal-company"
+              name="company"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+              placeholder="Your company name"
+            />
+          </div>
+          
+          <div>
+            <label for="modal-consultationType" class="block text-sm font-medium text-gray-700 mb-2">
+              Consultation Type
+            </label>
+            <select
+              id="modal-consultationType"
+              name="consultationType"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+            >
+              <option value="">Select consultation type</option>
+              <option value="Executive Advisory">Executive Advisory</option>
+              <option value="Investment Due Diligence">Investment Due Diligence</option>
+              <option value="Market Entry Strategy">Market Entry Strategy</option>
+              <option value="Board Advisory">Board Advisory</option>
+              <option value="Startup Advisory">Startup Advisory</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="modal-subject" class="block text-sm font-medium text-gray-700 mb-2">
+            Subject
+          </label>
+          <input
+            type="text"
+            id="modal-subject"
+            name="subject"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+            placeholder="Brief subject of your inquiry"
+          />
+        </div>
+
+        <div>
+          <label for="modal-message" class="block text-sm font-medium text-gray-700 mb-2">
+            Message *
+          </label>
+          <textarea
+            id="modal-message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors resize-vertical"
+            placeholder="Please describe your project, timeline, and how we can help you achieve your innovation goals..."
+          ></textarea>
+        </div>
+
+        <div class="flex items-start space-x-3">
+          <input
+            type="checkbox"
+            id="modal-privacy"
+            name="privacy"
+            required
+            class="mt-1 h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+          />
+          <label for="modal-privacy" class="text-sm text-gray-600">
+            I agree to the privacy policy and consent to ALTA Innovation storing my information for the purpose of responding to my inquiry. *
+          </label>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-4">
+          <button
+            type="submit"
+            id="modal-submit-btn"
+            class="flex-1 bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <span id="modal-submit-text">Send Message</span>
+            <svg id="modal-submit-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            </svg>
+            <svg id="modal-loading-icon" class="w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="modal-cancel-btn"
+            class="flex-1 sm:flex-none bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-6 rounded-lg transition-colors"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+
+      <!-- Success/Error Messages -->
+      <div id="modal-form-message" class="mt-6 hidden">
+        <div id="modal-success-message" class="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg hidden">
+          <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            <span id="modal-success-text"></span>
+          </div>
+        </div>
+        
+        <div id="modal-error-message" class="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg hidden">
+          <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+            </svg>
+            <span id="modal-error-text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Modal functionality
+  const modal = document.getElementById('contact-modal') as HTMLElement;
+  const closeModalBtn = document.getElementById('close-modal') as HTMLButtonElement;
+  const cancelBtn = document.getElementById('modal-cancel-btn') as HTMLButtonElement;
+  const form = document.getElementById('modal-contact-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('modal-submit-btn') as HTMLButtonElement;
+  const submitText = document.getElementById('modal-submit-text') as HTMLSpanElement;
+  const submitIcon = document.getElementById('modal-submit-icon') as HTMLElement;
+  const loadingIcon = document.getElementById('modal-loading-icon') as HTMLElement;
+  const formMessage = document.getElementById('modal-form-message') as HTMLElement;
+  const successMessage = document.getElementById('modal-success-message') as HTMLElement;
+  const errorMessage = document.getElementById('modal-error-message') as HTMLElement;
+  const successText = document.getElementById('modal-success-text') as HTMLElement;
+  const errorText = document.getElementById('modal-error-text') as HTMLElement;
+
+  // Function to open modal
+  function openContactModal() {
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    
+    // Focus on first input
+    const firstInput = document.getElementById('modal-name') as HTMLInputElement;
+    setTimeout(() => firstInput?.focus(), 100);
+  }
+
+  // Function to close modal
+  function closeContactModal() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = ''; // Restore scrolling
+    
+    // Reset form and messages
+    form.reset();
+    formMessage.classList.add('hidden');
+    successMessage.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+  }
+
+  // Event listeners for closing modal
+  closeModalBtn.addEventListener('click', closeContactModal);
+  cancelBtn.addEventListener('click', closeContactModal);
+  
+  // Close modal when clicking backdrop
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeContactModal();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeContactModal();
+    }
+  });
+
+  // Form submission
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitText.textContent = 'Sending...';
+    submitIcon.classList.add('hidden');
+    loadingIcon.classList.remove('hidden');
+    
+    // Hide previous messages
+    formMessage.classList.add('hidden');
+    successMessage.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+
+    try {
+      const formData = new FormData(form);
+      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Show success message
+        successText.textContent = result.message;
+        successMessage.classList.remove('hidden');
+        formMessage.classList.remove('hidden');
+        
+        // Reset form and close modal after delay
+        form.reset();
+        setTimeout(() => {
+          closeContactModal();
+        }, 2000);
+      } else {
+        // Show error message
+        errorText.textContent = result.error;
+        errorMessage.classList.remove('hidden');
+        formMessage.classList.remove('hidden');
+      }
+    } catch (error) {
+      // Show error message
+      errorText.textContent = 'Network error. Please check your connection and try again.';
+      errorMessage.classList.remove('hidden');
+      formMessage.classList.remove('hidden');
+    } finally {
+      // Reset button state
+      submitBtn.disabled = false;
+      submitText.textContent = 'Send Message';
+      submitIcon.classList.remove('hidden');
+      loadingIcon.classList.add('hidden');
+    }
+  });
+
+  // Make openContactModal globally available
+  (window as any).openContactModal = openContactModal;
+</script>

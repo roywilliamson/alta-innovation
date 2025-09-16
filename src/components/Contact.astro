@@ -1,6 +1,7 @@
 ---
 // Contact section for Innovation Nexus Consulting
 import ContactForm from './ContactForm.astro';
+import ContactModal from './ContactModal.astro';
 ---
 
 <section id="contact" class="py-20 bg-gray-50">
@@ -49,7 +50,7 @@ import ContactForm from './ContactForm.astro';
           <div class="bg-white border border-gray-300 shadow-lg rounded-xl p-6 text-center">
             <button
               class="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-3 mx-auto"
-              onclick="window.location.href='mailto:roy@alta-innovation.com'"
+              onclick="openContactModal()"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -110,3 +111,6 @@ import ContactForm from './ContactForm.astro';
     </div>
   </div>
 </section>
+
+<!-- Contact Modal -->
+<ContactModal />
