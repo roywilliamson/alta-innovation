@@ -52,3 +52,7 @@ export function getInsightsContent() {
 export function getContactContent() {
   return getContent('contact');
 }
+
+export function getServicesContent() {
+  return getContent('services');
+}

@@ -51,6 +51,7 @@
           "choices": [
             "hero",
             "navigation",
+            "services",
             "expertise",
             "clients",
             "insights",
@@ -211,7 +212,11 @@
       "value": "section:navigation"
     },
     {
-      "title": "Services",
+      "title": "Advisory Services",
+      "value": "section:services"
+    },
+    {
+      "title": "Expertise",
       "value": "section:expertise"
     },
     {

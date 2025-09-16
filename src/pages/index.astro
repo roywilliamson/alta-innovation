@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
 import Expertise from '../components/Expertise.astro';
 import ClientShowcase from '../components/ClientShowcase.astro';
 import Whitepapers from '../components/Whitepapers.astro';
@@ -11,6 +12,7 @@ import { isContentPublished } from '../lib/content.ts';
 // Check which sections are published
 const isNavigationPublished = isContentPublished('navigation');
 const isHeroPublished = isContentPublished('hero');
+const isServicesPublished = isContentPublished('services');
 const isExpertisePublished = isContentPublished('expertise');
 const isClientsPublished = isContentPublished('clients');
 const isInsightsPublished = isContentPublished('insights');
@@ -21,6 +23,7 @@ const isContactPublished = isContentPublished('contact');
   <div class="min-h-screen bg-white">
     {isNavigationPublished && <Navigation />}
     {isHeroPublished && <Hero />}
+    {isServicesPublished && <Services />}
     {isExpertisePublished && <Expertise />}
     {isClientsPublished && <ClientShowcase />}
     {isInsightsPublished && <Whitepapers />}
