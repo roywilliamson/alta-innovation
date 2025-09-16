@@ -6,15 +6,24 @@ import Expertise from '../components/Expertise.astro';
 import ClientShowcase from '../components/ClientShowcase.astro';
 import Whitepapers from '../components/Whitepapers.astro';
 import Contact from '../components/Contact.astro';
+import { isContentPublished } from '../lib/content.ts';
+
+// Check which sections are published
+const isNavigationPublished = isContentPublished('navigation');
+const isHeroPublished = isContentPublished('hero');
+const isExpertisePublished = isContentPublished('expertise');
+const isClientsPublished = isContentPublished('clients');
+const isInsightsPublished = isContentPublished('insights');
+const isContactPublished = isContentPublished('contact');
 ---
 
 <Layout title="ALTA INNOVATION | Roy Williamson - Innovation Strategy Consultant">
   <div class="min-h-screen bg-white">
-    <Navigation />
-    <Hero />
-    <Expertise />
-    <ClientShowcase />
-    <Whitepapers />
-    <Contact />
+    {isNavigationPublished && <Navigation />}
+    {isHeroPublished && <Hero />}
+    {isExpertisePublished && <Expertise />}
+    {isClientsPublished && <ClientShowcase />}
+    {isInsightsPublished && <Whitepapers />}
+    {isContactPublished && <Contact />}
   </div>
 </Layout>

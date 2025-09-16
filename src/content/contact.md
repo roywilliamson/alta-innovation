@@ -3,8 +3,9 @@ contentTitle: 📞 Let's Discuss Your Innovation Strategy & Contact Details
 cardImage: ../frontmatter_content/lets-discuss-section.jpg
 section: contact
 order: 6
+published: true
 date: 2025-06-27T17:03:51.456Z
-lastmod: 2025-07-01T12:20:10.640Z
+lastmod: 2025-09-16T13:18:21.078Z
 title: Let's Discuss Your Innovation Strategy
 description: Ready to navigate the complexities of deeptech markets? Schedule a strategic consultation to explore investment opportunities, business development strategies, and solutions to systemic challenges.
 consultationTitle: Strategic Consultation

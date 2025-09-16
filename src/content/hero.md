@@ -3,8 +3,9 @@ contentTitle: 🏠 Homepage Hero Banner
 cardImage: ../frontmatter_content/hero_section.jpg
 section: hero
 order: 2
+published: true
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-09-15T12:48:10.886Z
+lastmod: 2025-09-16T13:17:08.580Z
 title: Unlocking opportunities for startups, investors, government
 subtitle: Alta Innovation - Your solutions partner
 description: Building on extensive experience across many deep technology sectors, covering evaluation, business development and mentoring, Alta brings insight and expertise to the challenges faced by startups, scale-ups and policy officals in emerging technology markets.

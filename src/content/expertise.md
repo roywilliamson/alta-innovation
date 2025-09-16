@@ -3,8 +3,9 @@ contentTitle: 💼 Strategic Expertise & Service Offerings
 cardImage: ../frontmatter_content/strategic_section.jpg
 section: expertise
 order: 3
+published: true
 date: 2025-06-27T17:06:56.281Z
-lastmod: 2025-07-01T12:27:44.110Z
+lastmod: 2025-09-16T13:17:50.464Z
 title: Strategic Expertise
 description: Proven expertise in deeptech investment, business development, and innovation strategy. Specializing in helping startups and scale-ups navigate complex technology markets and systemic challenges.
 features:

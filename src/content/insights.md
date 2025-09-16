@@ -1,12 +1,13 @@
 ---
-# contentTitle: 📊 Strategic Insights & Research Publications
-# cardImage: ../frontmatter_content/insights_section.jpg
-# section: insights
-# order: 5
-# date: 2025-06-27T17:03:32.050Z
-# lastmod: 2025-07-28T14:44:39.215Z
-# title: Strategic Insights & Research
-# description: Insights and analysis from extensive experience in deeptech investment and business development, helping startups navigate complex market challenges.
+contentTitle: 📊 Strategic Insights & Research Publications
+cardImage: ../frontmatter_content/insights_section.jpg
+section: insights
+order: 5
+published: false
+date: 2025-06-27T17:03:32.050Z
+lastmod: 2025-07-28T14:44:39.215Z
+title: Strategic Insights & Research
+description: Insights and analysis from extensive experience in deeptech investment and business development, helping startups navigate complex market challenges.
 # whitepapers:
 #   - title: "Deeptech Investment Strategy: Navigating Emerging Technology Markets"
 #     description: Strategic framework for investors and startups in deeptech sectors, covering market analysis, risk assessment, and commercialization pathways.

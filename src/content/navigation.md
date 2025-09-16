@@ -4,6 +4,7 @@ image: ../frontmatter_content/navigation_section.jpg
 cardImage: ../frontmatter_content/navigation_section.jpg
 section: navigation
 order: 1
+published: true
 date: 2025-06-07T17:05:07.414Z
 title: Alta Innovation
 menuItems:
@@ -15,7 +16,7 @@ menuItems:
     link: "#insights"
   - label: Contact
     link: "#contact"
-lastmod: 2025-07-01T12:11:20.112Z
+lastmod: 2025-09-16T13:17:33.924Z
 ---
 
 # Navigation Content
