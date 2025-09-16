@@ -8,17 +8,15 @@ draft: false
 date: 2025-06-07T17:05:07.414Z
 title: Alta Innovation
 menuItems:
-  - label: Services
+  - label: Consulting
     link: "#services"
   - label: Expertise
     link: "#expertise"
   - label: Clients
     link: "#clients"
-  - label: Insights
-    link: "#insights"
   - label: Contact
     link: "#contact"
-lastmod: 2025-09-16T14:13:08.554Z
+lastmod: 2025-09-16T14:16:46.057Z
 ---
 
 # Navigation Content

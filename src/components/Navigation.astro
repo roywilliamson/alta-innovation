@@ -3,27 +3,26 @@
 import { getNavigationContent } from '../lib/content.ts';
 
 const navContent = getNavigationContent();
+const menuItems = navContent.menuItems || [];
 ---
 
 <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <div class="text-xl font-bold text-gray-900">{navContent.title || "ALTA INNOVATION"}</div>
+      <button
+        data-scroll-to="top"
+        class="text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors cursor-pointer"
+      >
+        {navContent.title || "ALTA INNOVATION"}
+      </button>
       
       <!-- Desktop Navigation -->
       <div class="hidden md:flex space-x-8">
-        <button data-scroll-to="expertise" class="text-gray-700 hover:text-orange-600 transition-colors">
-          Expertise
-        </button>
-        <button data-scroll-to="clients" class="text-gray-700 hover:text-orange-600 transition-colors">
-          Clients
-        </button>
-        <button data-scroll-to="insights" class="text-gray-700 hover:text-orange-600 transition-colors">
-          Insights
-        </button>
-        <button data-scroll-to="contact" class="text-gray-700 hover:text-orange-600 transition-colors">
-          Contact
-        </button>
+        {menuItems.map((item) => (
+          <button data-scroll-to={item.link.replace('#', '')} class="text-gray-700 hover:text-orange-600 transition-colors">
+            {item.label}
+          </button>
+        ))}
       </div>
 
       <!-- Mobile menu button -->
@@ -41,18 +40,11 @@ const navContent = getNavigationContent();
 
     <!-- Mobile Navigation -->
     <div id="mobile-menu" class="md:hidden py-4 space-y-2 hidden">
-      <button data-scroll-to="expertise" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-orange-50 rounded-md">
-        Expertise
-      </button>
-      <button data-scroll-to="clients" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-orange-50 rounded-md">
-        Clients
-      </button>
-      <button data-scroll-to="insights" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-orange-50 rounded-md">
-        Insights
-      </button>
-      <button data-scroll-to="contact" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-orange-50 rounded-md">
-        Contact
-      </button>
+      {menuItems.map((item) => (
+        <button data-scroll-to={item.link.replace('#', '')} class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-orange-50 rounded-md">
+          {item.label}
+        </button>
+      ))}
     </div>
   </div>
 </nav>
@@ -87,17 +79,23 @@ const navContent = getNavigationContent();
     button.addEventListener('click', (e) => {
       const target = (e.target as HTMLElement).getAttribute('data-scroll-to');
       if (target) {
-        const element = document.getElementById(target);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-          
-          // Close mobile menu if open
-          if (isOpen) {
-            isOpen = false;
-            mobileMenu?.classList.add('hidden');
-            menuIcon?.classList.remove('hidden');
-            closeIcon?.classList.add('hidden');
+        if (target === 'top') {
+          // Scroll to top of page
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // Scroll to specific element
+          const element = document.getElementById(target);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
           }
+        }
+
+        // Close mobile menu if open
+        if (isOpen) {
+          isOpen = false;
+          mobileMenu?.classList.add('hidden');
+          menuIcon?.classList.remove('hidden');
+          closeIcon?.classList.add('hidden');
         }
       }
     });
