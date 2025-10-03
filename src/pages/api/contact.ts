@@ -65,7 +65,7 @@ export const POST: APIRoute = async ({ request }) => {
     const { data, error } = await resend.emails.send({
       from: 'ALTA Innovation Contact <onboarding@resend.dev>', // Using Resend's default domain
       to: ['roy@alta-innovation.com'], // Your email address
-      replyTo: 'roy@alta-innovation.com', // Reply-to address
+      replyTo: email, // User's email for easy replies
       subject: `New Contact Form Submission: ${subject || 'General Inquiry'}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb; border-radius: 8px;">
