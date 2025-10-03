@@ -6,7 +6,14 @@ export const prerender = false;
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Initialize Resend client with environment variable
-    const apiKey = import.meta.env.RESEND_API_KEY;
+    // Try both import.meta.env and process.env for compatibility
+    const apiKey = import.meta.env.RESEND_API_KEY || process.env.RESEND_API_KEY;
+
+    console.log('Environment check:', {
+      hasImportMetaEnv: !!import.meta.env.RESEND_API_KEY,
+      hasProcessEnv: !!process.env.RESEND_API_KEY,
+      hasApiKey: !!apiKey
+    });
 
     if (!apiKey) {
       console.error('RESEND_API_KEY environment variable is not set');
