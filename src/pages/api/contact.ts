@@ -63,7 +63,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'ALTA Innovation Contact <noreply@yourdomain.com>', // Replace with your verified domain
+      from: 'ALTA Innovation Contact <onboarding@resend.dev>', // Using Resend's default domain
       to: ['roy@alta-innovation.com'], // Your email address
       replyTo: email, // User's email for easy replies
       subject: `New Contact Form Submission: ${subject || 'General Inquiry'}`,
