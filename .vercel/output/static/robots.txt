@@ -1,0 +1,23 @@
+# robots.txt for ALTA Innovation
+# https://alta-innovation.com
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+# This is appropriate for a business website
+
+# Sitemap location (update with your actual domain when deployed)
+Sitemap: https://alta-innovation.com/sitemap.xml
+
+# Common crawl delays (optional)
+# Crawl-delay: 1
+
+# Block access to sensitive areas (if any exist in the future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important files
+Allow: /favicon.svg
+Allow: /images/
+Allow: /assets/
