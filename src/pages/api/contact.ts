@@ -6,13 +6,23 @@ export const prerender = false;
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Initialize Resend client with environment variable
-    // Try both import.meta.env and process.env for compatibility
-    const apiKey = import.meta.env.RESEND_API_KEY || process.env.RESEND_API_KEY;
+    // Try multiple possible environment variable names and access methods
+    const apiKey = import.meta.env.RESEND_API_KEY ||
+                   process.env.RESEND_API_KEY ||
+                   import.meta.env.VITE_RESEND_API_KEY ||
+                   process.env.VITE_RESEND_API_KEY ||
+                   import.meta.env.PUBLIC_RESEND_API_KEY ||
+                   process.env.PUBLIC_RESEND_API_KEY;
 
     console.log('Environment check:', {
       hasImportMetaEnv: !!import.meta.env.RESEND_API_KEY,
       hasProcessEnv: !!process.env.RESEND_API_KEY,
-      hasApiKey: !!apiKey
+      hasViteImportMeta: !!import.meta.env.VITE_RESEND_API_KEY,
+      hasViteProcess: !!process.env.VITE_RESEND_API_KEY,
+      hasPublicImportMeta: !!import.meta.env.PUBLIC_RESEND_API_KEY,
+      hasPublicProcess: !!process.env.PUBLIC_RESEND_API_KEY,
+      hasApiKey: !!apiKey,
+      apiKeyLength: apiKey ? apiKey.length : 0
     });
 
     if (!apiKey) {
