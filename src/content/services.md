@@ -5,15 +5,15 @@ section: services
 order: 3.5
 draft: false
 date: 2025-09-16T14:00:00.000Z
-lastmod: 2025-09-16T14:11:52.436Z
-title: Consulting Services
+lastmod: 2025-10-08T10:23:19.795Z
+title: Fractional and Consulting Services
 subtitle: Specialized expertise across the innovation ecosystem
 description: Bridging the gap between technology, investment, and policy to accelerate innovation and commercialization in emerging technology sectors.
 services:
   - title: Startup & Investor Advisory
     icon: 🚀
     details:
-      - Helping early-stage and scaling technology companies sharpen their value propositions, investment readiness, and go-to-market strategies
+      - Helping early-stage and scaling technology companies create successful value propositions, validate their market, and engage strategically valuable customers
       - Providing investors (VCs, CVCs, government-backed funds) with insights into deeptech due diligence, sector maturity, and commercialisation challenges
     highlights:
       - Value proposition development
