@@ -5,7 +5,7 @@ section: hero
 order: 2
 draft: false
 date: 2025-06-27T17:06:49.568Z
-lastmod: 2025-09-16T14:12:26.371Z
+lastmod: 2025-10-09T15:59:10.851Z
 title: Unlocking opportunities for startups, investors, government
 subtitle: Alta Innovation - Your solutions partner
 description: Building on extensive experience across many deep technology sectors, covering evaluation, business development and mentoring, Alta brings insight and expertise to the challenges faced by startups, scale-ups and policy officals in emerging technology markets.
