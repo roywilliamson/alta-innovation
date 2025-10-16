@@ -22,7 +22,8 @@ export const POST: APIRoute = async ({ request }) => {
       hasPublicImportMeta: !!import.meta.env.PUBLIC_RESEND_API_KEY,
       hasPublicProcess: !!process.env.PUBLIC_RESEND_API_KEY,
       hasApiKey: !!apiKey,
-      apiKeyLength: apiKey ? apiKey.length : 0
+      apiKeyLength: apiKey ? apiKey.length : 0,
+      timestamp: new Date().toISOString()
     });
 
     if (!apiKey) {
