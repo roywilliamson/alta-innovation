@@ -3,21 +3,21 @@
 ---
 
 <!-- Modal Backdrop -->
-<div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+<div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
   <!-- Modal Content -->
   <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
     <!-- Modal Header -->
     <div class="flex items-center justify-between p-6 border-b border-gray-200">
       <h2 class="text-2xl font-bold text-gray-900">Get In Touch</h2>
-      <!-- <button 
-        id="close-modal" 
+      <button
+        id="close-modal"
         class="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-full"
         aria-label="Close modal"
       >
-        <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg> -->
-      <!-- </button> --> -->
+        </svg>
+      </button>
     </div>
 
     <!-- Modal Body -->
@@ -201,8 +201,9 @@
   // Function to open modal
   function openContactModal() {
     modal.classList.remove('hidden');
+    modal.classList.add('flex');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
-    
+
     // Focus on first input
     const firstInput = document.getElementById('modal-name') as HTMLInputElement;
     setTimeout(() => firstInput?.focus(), 100);
@@ -211,8 +212,9 @@
   // Function to close modal
   function closeContactModal() {
     modal.classList.add('hidden');
+    modal.classList.remove('flex');
     document.body.style.overflow = ''; // Restore scrolling
-    
+
     // Reset form and messages
     form.reset();
     formMessage.classList.add('hidden');
